@@ -26,7 +26,7 @@ sudo systemctl enable tlp.service
 #zsh stuff
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-rm ~/.zshrc
+
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 sudo pacman -S --needed --noconfirm ripgrep
 
