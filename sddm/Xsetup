@@ -1,0 +1,10 @@
+#!/bin/sh
+# Xsetup - run as root before the login dialog appears
+
+internal = eDP1
+external = HDMI1
+
+if xrandr | grep "$external connected"; then
+	xrandr --output "$internal" --off --output "$external" --auto
+else
+	xrandr --auto

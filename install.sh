@@ -35,3 +35,5 @@ cp .zshrc ~
 cp .p10k.zsh ~
 cp -R Wallpapers ~/Wallpapers
 cp -R .config ~
+sudo cp sddm/sddm.conf /etc
+sudo cp sddm/Xsetup /usr/share/sddm/scripts/Xsetup
